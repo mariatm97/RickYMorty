@@ -1,27 +1,59 @@
-.divCard{
-  width: 30em;
-  height: 33em;
-};
+.divCard {
+  width: 15%;
+  height: 20%;
+  margin: 5px auto 0 auto;
+  /* arriba derecha abajo izq */
+  position: relative;
+  bottom: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(238, 117, 220, 0.6);
+  border: 1px solid white;
+  border-radius: 10px 10px 100px 100px;
+  /* line-height: 0.1%; */
+}
 
-.butt{
- background-color: brown;
- height: 400px;
- width: 300px;
- align-items: right; 
-};
+.btn {
+  background-color: rgb(160, 160, 230);
+  color: rgb(51, 5, 67);
+  height: 50%;
+  font-weight: bold;
+  font-size: 30%;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-left: 70%;
+  margin-top: 8%;
+  cursor: pointer;
+  user-select: none;
+}
 
-.h2Subtitle{
- color: white;
- align-items: center;
- justify-content: center;
- font-size: 50px;
- display: row;
- flex-wrap: row;
-};
+.btn:hover {
+  background-color: blueviolet;
+}
 
-.imag{
-  width: 50px;
-  height: 50px;
+.nm {
+  /* border: 1px solid white; */
+  color: white;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+}
+
+.others {
+  color: white;
+  font-size: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 35%;
+}
+
+.imag {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   border: 2px solid white;
 }

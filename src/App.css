@@ -1,5 +1,9 @@
 .App {
-  background-image: url(https://wallpapers.com/images/hd/rick-and-morty-giant-rick-head-7rkxpp27b8aqbqnl.jpg);
-  background-repeat: no-repeat;
   text-align: center;
+  background-image: url(https://www.xtrafondos.com/descargar.php?id=6046&resolucion=3840x2160);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center center;
+  /* line-height: 30%; */
 }

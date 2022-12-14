@@ -1,7 +1,30 @@
-.inp{
- color: brown;
+.inp {
+  background-color: rgba(233, 169, 223, 0.6);
+  color: rgb(38, 8, 31);
+  border: 1px solid rgb(38, 8, 31);
+  border-radius: 10%;
+  height: 2em;
+  width: fit-content;
+  font-size: 90%;
+  font-weight: bold;
+
 }
 
-.boton{
-    background-color: rgb(187, 71, 71);
+.boton {
+  border: 1px solid rgb(38, 8, 31);
+  border-radius: 15%;
+  background-color: rgb(241, 89, 208);
+  color: rgb(51, 5, 67);
+  height: 2em;
+  width: fit-content;
+  font-size: 90%;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  margin: 5px;
+  margin-right: 25px;
+}
+
+.boton:hover {
+  background-color: rgb(149, 21, 121);
 }

@@ -1,10 +1,21 @@
+import { useState } from 'react';
 import style from './SearchBar.module.css'
+
 export default function SearchBar(props) {
+
+  const [character, setCharacter] = useState('')
+
+  const handleInputChange = (event) => {
+    setCharacter(event.target.value)
+  }
+  const randomId = Math.floor(Math.random() * 826);
+
   return (
     <div>
-      <input type='search' className={style.inp}/>
+      <input type='search' className={style.inp} onChange={handleInputChange} />
       {/* le pasamos como cb props.onSearch */}
-      <button onClick={props.onSearch}>Agregar</button> 
+      <button className={style.boton} onClick={() => props.onSearch(character)}>Agregar</button>
+      <button className={style.boton} onClick={() => props.onSearch(randomId)}>RandomCard</button>
     </div>
   );
 }

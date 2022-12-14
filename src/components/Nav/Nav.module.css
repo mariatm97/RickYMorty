@@ -1,0 +1,43 @@
+.div {
+  background-color: rgba(159, 25, 139, 0.8);
+  border: 2px solid #f675ad;
+  margin: 5px;
+  /* arriba derecha abajo izq */
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1%;
+  position: fixed;
+  top: 0;
+  /* left: 5px; */
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+/* .divlink {
+  background-color: rgba(224, 73, 201, 0.6);
+  border: 2px solid rgb(239, 126, 209);
+  border-radius: 10px;
+  width: 5%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+  top: 50px;
+} */
+
+.home {
+  color: rgb(246, 214, 240);
+  font-size: medium;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.about {
+  color: rgb(246, 214, 240);
+  font-size: medium;
+  font-weight: bold;
+  margin: 10px;
+}

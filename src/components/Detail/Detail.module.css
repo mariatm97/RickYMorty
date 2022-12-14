@@ -1,0 +1,51 @@
+.divDet {
+  background-color: rgba(215, 67, 193, 0.9);
+  border: 2px solid rgb(111, 9, 102);
+  border-radius: 25px;
+  width: 20%;
+  height: 40%;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.hDet {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.ps {
+  color: rgb(252, 246, 246);
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 3%;
+}
+
+.imgDet {
+  width: 70%;
+  height: 70%;
+  border-radius: 10%;
+  border: 2px solid white;
+}
+
+.btn {
+  background-color: rgb(160, 160, 230);
+  color: rgb(51, 5, 67);
+  height: 80%;
+  font-weight: bold;
+  font-size: 90%;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin: 3%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+}

@@ -5,16 +5,17 @@ export default function Cards(props) {
   const { characters } = props;
   return (
     <div className={style.divCards}>
-      {characters.map((chart,i)=> 
-        <Card 
+      {characters.map((chart, i) =>
+        <Card
+          id={chart.id}
           name={chart.name}
           species={chart.species}
           gender={chart.gender}
           image={chart.image}
-          onClose={() => window.alert('Emulamos que se cierra la card')}
-          key = {i}
+          onClose={props.onClose}
+          key={i}
         />
-      )};
+      )}
     </div>
-  );
+  )
 }
