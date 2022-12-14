@@ -4,7 +4,7 @@
   border-radius: 25px;
   width: 20%;
   height: 40%;
-  position: relative;
+  position: fixed;
   bottom: 100px;
   display: flex;
   align-items: center;

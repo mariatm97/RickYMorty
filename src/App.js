@@ -16,7 +16,7 @@ function App() {
   const location = useLocation()
 
   // const history = useHistory();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [access, setAccess] = useState(false);
   const username = 'mtmd027@gmail.com';
   const password = 'Soyhenry2022!';
@@ -24,15 +24,15 @@ function App() {
   function login(userData) {
     if (userData.password === password && userData.username === username) {
       setAccess(true);
-      navigate('/home');
+      // navigate('/home');
       // history.push('/home');
     }
   }
 
-  useEffect(() => {
-    !access && navigate('/');
-  }, [access]);
-  // !access && history.push('/');
+  // useEffect(() => {
+  //   !access && navigate('/');
+  // }, [access]);
+  //   !access && history.push('/');
   // }, [access, history]);
 
   function onSearch(character) {
