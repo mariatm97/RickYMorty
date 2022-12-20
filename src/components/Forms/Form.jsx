@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './Form.module.css'
 import { validate } from './validation';
+import { useNavigate } from 'react-router-dom';
 
-export const Form = ({ login }) => {
+export const Form = (props) => {
 
   const [userData, setUserData] = useState({
     username: '',
@@ -13,6 +14,22 @@ export const Form = ({ login }) => {
     password: '',
   })
 
+  const navigate = useNavigate();
+  const [access, setAccess] = React.useState(false);
+  const username = 'mtmd027@gmail.com';
+  const password = 'Soyhenry2022!';
+
+  function login(userData) {
+    if (userData.password === password && userData.username === username) {
+      setAccess(true);
+      navigate('/home');
+    }
+  }
+
+  useEffect(() => {
+    !access && navigate('/');
+  }, [access, navigate]);
+
   const handleInputChange = (event) => {
     const prop = event.target.name;
     const value = event.target.value;
@@ -20,12 +37,13 @@ export const Form = ({ login }) => {
     setErrors(validate({ ...userData, [prop]: value }))
   }
 
-  const handleSubmit = (userData) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
     login(userData)
   }
   return (
     <div className={style.divForm}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label htmlFor='username' className={style.labelForm}>Name: </label>
         <input name='username'
           placeholder='Escribe tu nombre de usuario...'
@@ -36,6 +54,7 @@ export const Form = ({ login }) => {
         </input>
         {errors.username && <p className={style.danger}>{errors.username}</p>}
         <br></br>
+
         <label htmlFor='password' className={style.labelForm}>Password: </label>
         <input name='password'
           placeholder='Escribe tu password...'
@@ -46,7 +65,7 @@ export const Form = ({ login }) => {
         </input>
         {errors.password && <p className={style.danger}>{errors.password}</p>}
 
-        <button type='submit' className={style.btnform} onSubmit={handleSubmit}>Send</button>
+        <button type='submit' className={style.btnform}>Send</button>
       </form>
     </div>
   )

@@ -10,8 +10,8 @@ function Nav(props) {
             onSearch={props.onSearch}
          />
          {/* <div className={style.divlink}> */}
-         <Link to='/home' className={style.home}>Home</Link>
-         <Link to='/about' className={style.about}>About</Link>
+         <button className={style.home}><Link to='/home' >Home</Link></button>
+         <button className={style.about}><Link to='/about' >About</Link></button>
          {/* </div> */}
       </div>
    );
