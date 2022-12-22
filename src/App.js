@@ -6,6 +6,7 @@ import { About } from './components/About/About'
 import { Detail } from './components/Detail/Detail'
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Form } from './components/Forms/Form'
+import Favorites from './components/Favorites/Favorites'
 
 function App() {
 
@@ -49,7 +50,8 @@ function App() {
         <Route exact path='/about' element={<About />} />
 
         <Route exact path='/detail/:detailId' element={<Detail />} />
-        
+
+        <Route exact path='/favorites' element={<Favorites />} />
       </Routes>
     </div>
   )

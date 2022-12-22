@@ -11,11 +11,12 @@ export default function SearchBar(props) {
   const randomId = Math.floor(Math.random() * 826);
 
   return (
-    <div>
+    <div className={style.div}>
+      <button className={style.boton} onClick={() => props.onSearch(randomId)}>RandomCard</button>
       <input type='search' className={style.inp} onChange={handleInputChange} />
       {/* le pasamos como cb props.onSearch */}
       <button className={style.boton} onClick={() => props.onSearch(character)}>Agregar</button>
-      <button className={style.boton} onClick={() => props.onSearch(randomId)}>RandomCard</button>
+
     </div>
   );
 }
