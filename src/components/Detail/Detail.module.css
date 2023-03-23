@@ -1,47 +1,82 @@
 .divDet {
-  background-color: rgba(215, 67, 193, 0.9);
-  border: 2px solid rgb(111, 9, 102);
-  border-radius: 25px;
-  width: 20%;
-  height: 65%;
-  position: fixed;
-  bottom: 100px;
+  /* display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -20.5vw;
+  margin-left: 15vw; */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 0px auto;
+  margin-top: -20.5vw;
 }
 
 .hDet {
-  color: white;
-  font-size: larger;
+  color: rgb(103, 255, 133);
+  font-family: cursive;
+  font-size: 48px;
   font-weight: bold;
-}
-
-.ps {
-  color: rgb(252, 246, 246);
-  font-size: 100%;
-  font-weight: bold;
-  line-height: 3%;
+  margin-bottom: 4vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.582);
 }
 
 .imgDet {
-  width: 70%;
-  height: 45%;
-  border-radius: 10%;
-  border: 2px solid white;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  /* border: 2px solid white; */
+}
+
+.textinf {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: -2vw;
+}
+
+.dettext {
+  padding: 10px;
+}
+
+.hinf {
+  color: rgb(154, 207, 250);
+  margin-bottom: -1.3vw;
+  font-size: 20px;
+  font-family: cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.582);
+}
+
+.ps {
+  width: auto;
+  height: auto;
+  padding: .5vw;
+  color: rgb(252, 246, 246);
+  background-color: rgb(244, 55, 229);
+  border-radius: 5px;
+  font-size: 18px;
+
+}
+
+.contbtn {
+  display: flex;
 }
 
 .btn {
   background-color: rgb(160, 160, 230);
   color: rgb(51, 5, 67);
-  height: 80%;
+  /* height: 4vw; */
+  width: 15vw;
   font-weight: bold;
-  font-size: 90%;
+  font-size: 18px;
   border-radius: 5px;
-  border: 2px solid white;
+  border: none;
   margin: 3%;
+  margin-top: -1vw;
+  padding: 1vw;
   cursor: pointer;
   user-select: none;
 }

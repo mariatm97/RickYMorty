@@ -1,45 +1,103 @@
-.warning {
-    border: solid red 1px;
-    border-radius: 0.2em;
+.marg {
+    /* margin-left: 40vw; */
+    margin-top: -25vw;
 }
 
-.danger {
-    font-size: 15px;
-    color: red;
-    margin-left: 2em;
+/* Estilo del encabezado principal */
+
+.tittleLand h1 {
+    margin-bottom: -35px;
+    font-size: 47px;
+    color: #40d145;
+    text-shadow: 2px 2px 4px rgba(185, 185, 95, 0.582);
 }
 
+.tittleLand h2 {
+    margin-bottom: -10px;
+    font-size: 40px;
+    color: #40d145;
+    text-shadow: 2px 2px 4px rgba(185, 185, 95, 0.582);
+}
+
+/* Estilo del subtítulo */
+.tittleLand h4 {
+    font-size: 23px;
+    margin-bottom: 25px;
+    color: rgb(116, 217, 247);
+}
+
+/* Estilo del contenedor del formulario */
 .divForm {
-    background-color: rgba(215, 67, 193, 0.9);
-    border: 2px solid rgb(111, 9, 102);
-    border-radius: 25px;
-    width: 30%;
-    height: 60%;
-    position: relative;
-    bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px auto;
+    /* border: 2px solid gray; */
+    border-radius: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-top: 20px;
+    /* margin-bottom: 10px; */
 }
 
-.labelForm {
-    color: white;
-    font-size: larger;
-    font-weight: bold;
+/* Estilo de la etiqueta de entrada y el campo de entrada */
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(17, 17, 17);
 }
 
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    /* background-color: #ade3af; */
+}
+
+/* Estilo de la advertencia */
+.error {
+    border-color: red;
+    border: 3px solid red;
+    background-color: #f1b7bd;
+}
+
+/* Estilo del botón */
 .btnform {
-    background-color: rgb(160, 160, 230);
-    color: rgb(51, 5, 67);
-    height: 80%;
-    font-weight: bold;
-    font-size: 90%;
-    border-radius: 5px;
-    border: 2px solid white;
-    margin: 3%;
+    background-color: #55cd59;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
     cursor: pointer;
-    user-select: none;
+}
+
+/* Estilo del botón del usuario invitado */
+.btnGuest {
+    /* height: 35px; */
+    background-color: rgb(235, 90, 213);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo del mensaje de error */
+.danger {
+    max-width: 460px;
+    height: auto;
+    padding: .5em;
+    font-size: 1em;
+    border-radius: .4em;
+    font-weight: 600;
+    background-color: rgb(254, 254, 57);
 }

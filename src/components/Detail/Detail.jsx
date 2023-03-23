@@ -27,15 +27,21 @@ export const Detail = () => {
 
   return (
     <div className={style.divDet}>
-      <h1 className={style.hDet}>{character.name}</h1>
-      <img className={style.imgDet} src={character.image} alt="imagen" />
-      <p className={style.ps}>Status: {character.status}</p>
-      <p className={style.ps}>Specie: {character.species}</p>
-      <p className={style.ps}>Gender: {character.gender}</p>
-      <p className={style.ps}>Origin: {character.origin?.name}</p>
-      <Link to={'/home'} >
-        <button className={style.btn}>Home</button>
-      </Link >
+      <div>
+        <h1 className={style.hDet}>{character.name}</h1>
+        <img className={style.imgDet} src={character.image} alt="imagen" />
+      </div>
+      <div className={style.textinf}>
+        <div className={style.dettext}><h3 className={style.hinf}>Status: </h3><p className={style.ps}>{character.status}</p></div>
+        <div className={style.dettext}><h3 className={style.hinf}>Specie: </h3><p className={style.ps}>{character.species}</p></div>
+        <div className={style.dettext}><h3 className={style.hinf}>Gender: </h3><p className={style.ps}>{character.gender}</p></div>
+        <div className={style.dettext}><h3 className={style.hinf}>Origin: </h3><p className={style.ps}>{character.origin?.name}</p></div >
+      </div>
+      <div className={style.contbtn}>
+        <Link to={'/home'} >
+          <button className={style.btn}>Return</button>
+        </Link >
+      </div>
     </div >
 
   )

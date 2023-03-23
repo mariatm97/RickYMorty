@@ -12,10 +12,10 @@ export default function SearchBar(props) {
 
   return (
     <div className={style.div}>
-      <button className={style.boton} onClick={() => props.onSearch(randomId)}>RandomCard</button>
-      <input type='search' className={style.inp} onChange={handleInputChange} />
+      <button className={style.boton} onClick={() => props.onSearch(randomId)}>Random Card</button>
+      <input type='search' className={style.inp} onChange={handleInputChange} placeholder='Type a number...'/>
       {/* le pasamos como cb props.onSearch */}
-      <button className={style.boton} onClick={() => props.onSearch(character)}>Agregar</button>
+      <button className={style.boton} onClick={() => props.onSearch(character)}>Search</button>
 
     </div>
   );

@@ -1,7 +1,37 @@
-.div {
+.h1Fav {
+    font-family: cursive;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.582);
+    margin-top: -18vw;
+    /* margin-left: 40vw; */
+    font-size: 55px;
+    color: rgb(237, 32, 179);
+}
+
+.divFav {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
+.favoriteCard {
+    border-radius: .5em;
+    width: 200px;
+    height: auto;
+    background-color: rgb(16, 185, 242);
+    overflow: hidden;
+    margin: 1em;
+    border: solid rgb(16, 185, 242) 15px;
+}
+
+.favoriteCard img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.favName {
+    color: #272727eb;
+    font-family: monospace;
+    font-size: 1.4em;
+    margin: .5em;
+}

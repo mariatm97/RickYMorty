@@ -5,16 +5,23 @@ export const About = () => {
   return (
     <div>
       <div className={style.divAb}>
-        <h1 className={style.hAb}>Maria Teresa Morón</h1>
-        <img className={style.imgAb} src={require('../imagenes/Foto-MTMD.jpg')} alt="Foto" />
-        <p className={style.pAb}>Status: Alive</p>
-        <p className={style.pAb}>Specie: Human</p>
-        <p className={style.pAb}>Gender: Female</p>
-        <p className={style.pAb}>Origin: Earth (C-137)</p>
-        <p className={style.pAb}>GitHub: mariatm97</p>
-        <p className={style.pAb}>LinkedIn: Maria Teresa Morón</p>
-        <p className={style.pAb}>Email: mtmd027@gmail.com</p>
+        <h1 className={style.h1Ab}>Teresa Morón</h1>
+        <img className={style.imgAb} src={require('../imagenes/avatar1.png')} alt="Foto" />
+        <div className={style.abouText}>
+          <p><b>Hi! My name is Teresa!</b>He created this page so that Rick and Morty fans can find all the characters from this animated series. You can search for them by their ID, or discover random characters; You can also access more detailed information on a character by clicking on each character's name.</p>
+          <p>I hope you find it usefull!</p>
+        </div>
       </div>
+      <div className={style.aboutinf}>
+        <div className={style.aboutcontext}> <h3 className={style.h3Ab}>Status: </h3> <p className={style.pAb}>Alive</p></div>
+        <div className={style.aboutcontext}><h3 className={style.h3Ab}>Specie: </h3> <p className={style.pAb}>Human</p></div>
+        <div className={style.aboutcontext}><h3 className={style.h3Ab}>Gender: </h3> <p className={style.pAb}>Female</p></div>
+        <div className={style.aboutcontext}><h3 className={style.h3Ab}>Origin: </h3> <p className={style.pAb}>Earth (C-137)</p></div >
+        <div className={style.aboutcontext}><h3 className={style.h3Ab}>GitHub: </h3> <p className={style.pAb}>mariatm97</p></div >
+        <div className={style.aboutcontext}><h3 className={style.h3Ab}>LinkedIn: </h3> <p className={style.pAb}>mariatm97</p></div >
+        {/* <div className={style.aboutcontext}><h3 className={style.h3Ab}>Email: </h3> <p className={style.pAb}>mtmd027@gmail.com</p></div > */}
+      </div>
+
 
       {/* <div className={style.divAb}>
         explicación acerca de la aplicación!

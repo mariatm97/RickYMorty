@@ -6,18 +6,12 @@ const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$
 export const validate = (userData) => {
     const errors = {};
 
-    if (!regexEmail.test(userData.username)) {
-        errors.username = 'Debe ser un correo electrónico';
-    }
-    if (!userData.username) {
-        errors.username = 'Se requiere un nombre de usuario...';
-    }
-    if (userData.length > 35) {
-        errors.username = 'Debe tener menos de 35 caracteres';
-    }
-    if (!regexPassword.test(userData.password)) {
-        errors.password = 'Debe tener al menos un numero, un caracter especial y tener entre 6 y 10 caracteres...';
+    if (userData.username.length <= 1 && !regexEmail.test(userData.username)) {
+        errors.username = 'Please type a valid email';
     }
 
+    if (userData.password.length >= 1 && !regexPassword.test(userData.password)) {
+        errors.password = 'Password must contain: a number, a special character and have between 6 and 10 characters';
+    }
     return errors
 }

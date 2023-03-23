@@ -2,7 +2,7 @@ import { ADD_CHARACTER, DELETE_CHARACTER, FILTER, ORDER } from './actions';
 
 const initialState = {
   myFavorites: [],
-  // allCharacters: []
+  allCharacters: []
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -18,14 +18,14 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         myFavorites: state.myFavorites?.filter((fav) => fav.id !== action.payload)
       }
-    // case FILTER:
-    //   return {
-    //     ...state, myFavorites: state.allCharacters?.filter((fav) => fav.gender === action.payload)
-    //   };
-    // case ORDER:
-    //   return {
-    //     ...state, myFavorites: state.allCharacters?.sort((a, b) => a - b)
-    //   };
+    case FILTER:
+      return {
+        ...state, myFavorites: state.allCharacters?.filter((fav) => fav.gender === action.payload)
+      };
+    case ORDER:
+      return {
+        ...state, myFavorites: state.allCharacters?.sort((a, b) => a - b)
+      };
     default:
       return { ...state };
   };

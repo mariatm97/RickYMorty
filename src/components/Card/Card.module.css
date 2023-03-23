@@ -1,76 +1,86 @@
 .divCard {
-  width: 15%;
-  height: 20%;
-  margin: 5px auto 0 auto;
-  /* arriba derecha abajo izq */
-  position: relative;
-  bottom: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 300px;
+  height: 440px;
+  margin: 1em;
   flex-direction: column;
-  background-color: rgba(238, 117, 220, 0.6);
-  border: 1px solid white;
-  border-radius: 10px 10px 100px 100px;
-  /* line-height: 0.1%; */
+  background-color: rgb(235, 90, 213);
+  border-radius: 15px 15px 120px 120px;
+  overflow: hidden;
+}
+
+.divCard:hover {
+  transform: scale(1.05);
+  background-color: #11eadb;
+  transition: transform 1s;
+  transition: background-color 2s;
 }
 
 .btnFav {
   background-color: rgba(238, 117, 220, 0);
   color: rgb(51, 5, 67);
-  height: 100%;
+  width: 35px;
+  height: 30px;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 1.9em;
   border-radius: 5px;
   border: 1px solid rgba(238, 117, 220, 0);
-  margin-right: 70%;
-  margin-top: 2%;
+  /* margin-right: 70%; */
+  margin-top: .3em;
   cursor: pointer;
   user-select: none;
+  padding-right: 7em;
 }
 
 .btn {
-  background-color: rgb(160, 160, 230);
+  background-color: rgb(180, 107, 222);
+  width: 30px;
+  height: 28px;
   color: rgb(51, 5, 67);
-  height: 60%;
   font-weight: bold;
-  font-size: 70%;
+  font-size: 15px;
   border-radius: 5px;
-  border: 2px solid white;
-  margin-left: 70%;
-  margin-top: 0;
-  /* display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end; */
+  border: 1px solid rgb(235, 188, 188);
   cursor: pointer;
   user-select: none;
 }
 
 .btn:hover {
-  background-color: blueviolet;
+  background-color: rgb(58, 118, 247)
 }
 
-.nm {
-  /* border: 1px solid white; */
+.nam {
   color: white;
-  font-size: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
+  font-family: sans-serif;
+  font-size: 1.9em;
+  margin: 0.2em;
+  cursor: pointer;
+}
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.nam:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+  transition: color 2s;
 }
 
 .others {
-  color: white;
-  font-size: 80%;
+  /* color: rgb(24, 228, 255); */
+  color: rgb(19, 53, 243);
+  font-size: 1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
-  margin-left: 35%;
+  margin-bottom: -5px;
 }
 
 .imag {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 2px solid white;
+  height: 75%;
+  object-fit: contain;
+  border-radius: 5px 5px 120px 120px;
 }

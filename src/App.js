@@ -7,6 +7,7 @@ import { Detail } from './components/Detail/Detail'
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Form } from './components/Forms/Form'
 import Favorites from './components/Favorites/Favorites'
+import Swal from 'sweetalert2'
 
 function App() {
 
@@ -20,11 +21,12 @@ function App() {
         if (data.name) {
           for (let element of characters) {
             if (data.id === element.id)
-              return window.alert('El personaje ya ha sido agregado');
+              return new Swal("Sorry!", "The character has already been added.", "warning");
           }
           setCharacters((oldChars) => [...oldChars, data]);
         } else {
-          window.alert('No hay personajes con ese ID');
+          new Swal("Sorry!", "There are no characters with that ID", "error")
+          // window.alert('There are no characters with that ID');
         }
       });
   }

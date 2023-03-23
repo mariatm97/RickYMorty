@@ -1,9 +1,13 @@
 .App {
+  /* font-family: 'IBM Plex Mono'; */
+  /* text-align: center;
+  justify-content: flex-start; */
+  font-family: -apple-system, 'IBM Plex Mono', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
-  background-image: url(https://www.xtrafondos.com/descargar.php?id=6046&resolucion=3840x2160);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-attachment: fixed; */
-  background-position: center center;
-  /* line-height: 30%; */
+  margin: 2%;
+
 }

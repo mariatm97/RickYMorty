@@ -14,7 +14,7 @@ export function Card(props) {
             setIsFav(true);
          }
       }, []);
-   }, [props.myFavorites]);
+   }, [props.myFavorites, props.id]);
 
    const handleFavorite = () => {
       if (isFav) {
@@ -28,15 +28,21 @@ export function Card(props) {
    }
 
    return (
+
       <div className={style.divCard}>
-         {isFav ? (<button className={style.btnFav} onClick={handleFavorite}>❤️</button>) : (<button className={style.btnFav} onClick={handleFavorite}>🤍</button>)}
+         <div className={style.btnsCard}>
+         {isFav ? (<button className={style.btnFav} onClick={handleFavorite}>❤️</button>) 
+         : (<button className={style.btnFav} onClick={handleFavorite}>🤍</button>)}
          <button className={style.btn} onClick={props.onClose} id={props.id}>X</button>
+         </div>
+
          <Link to={`/detail/${props.id}`}>
-            <h2 className={style.nm}>{props.name}</h2>
+            <h2 className={style.nam}>{props.name}</h2>
          </Link>
          <h2 className={style.others}>{props.species}</h2>
          <h2 className={style.others}>{props.gender}</h2>
          <img className={style.imag} src={props.image} alt="imagen" />
+      
       </div>
    );
 }
