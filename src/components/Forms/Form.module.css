@@ -9,21 +9,22 @@
     margin-bottom: -35px;
     font-size: 47px;
     color: #40d145;
-    text-shadow: 2px 2px 4px rgba(185, 185, 95, 0.582);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
 }
 
 .tittleLand h2 {
-    margin-bottom: -10px;
+    margin-bottom: -18px;
     font-size: 40px;
     color: #40d145;
-    text-shadow: 2px 2px 4px rgba(185, 185, 95, 0.582);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
 }
 
 /* Estilo del subtítulo */
 .tittleLand h4 {
     font-size: 23px;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
     color: rgb(116, 217, 247);
+    font-family: cursive;
 }
 
 /* Estilo del contenedor del formulario */
@@ -33,15 +34,16 @@
     max-width: 480px;
     margin: 0 auto;
     padding-top: 20px;
-    /* margin-bottom: 10px; */
+    margin-top: 15px;
 }
 
 /* Estilo de la etiqueta de entrada y el campo de entrada */
 label {
     display: block;
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 5px;
     color: rgb(17, 17, 17);
+    font-family: cursive;
 }
 
 input[type="text"],
@@ -69,7 +71,8 @@ input[type="password"] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 19px;
+    font-family: cursive;
     margin-bottom: 10px;
     border-radius: 4px;
     cursor: pointer;
@@ -85,7 +88,8 @@ input[type="password"] {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 19px;
+    font-family: cursive;
     margin-bottom: 20px;
     border-radius: 4px;
     cursor: pointer;
