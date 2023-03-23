@@ -8,7 +8,7 @@ export const About = () => {
         <h1 className={style.h1Ab}>Teresa Morón</h1>
         <img className={style.imgAb} src={require('../imagenes/avatar1.png')} alt="Foto" />
         <div className={style.abouText}>
-          <p><b>Hi! My name is Teresa!</b> He created this page so that Rick and Morty fans can find all the characters from this animated series. You can search for them by their ID, or discover random characters; You can also access more detailed information on a character by clicking on each character's name.</p>
+          <p><b>Hi! My name is Teresa,</b> I created a page so that Rick and Morty fans can find all the characters in this animated series.You can search for them by their ID or discover random characters by clicking the 'Random Card' button; You can also access more detailed information about a character by clicking on their name.</p>
           <p>I hope you find it usefull!</p>
         </div>
       </div>
