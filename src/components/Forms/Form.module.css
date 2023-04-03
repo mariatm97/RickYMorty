@@ -1,55 +1,67 @@
 .wrapper {
     /* display: flex; */
     /* width: 100%; */
-    margin-top: -56vh;
-}
-
-/* .imagland .marg {
-    margin-top: -50vh;
-} */
-
-.imagland img {
-    width: 50vw;
-    height: 105vh;
+    margin-top: -60vh;
 }
 
 /* Estilo del encabezado principal */
 .marg {
-    margin-top: 16vh;
+    /* width: 100%; */
+    margin-top: 3vh;
+    position: relative;
+    left: -2vw;
 }
 
-.tittleLand h1 {
-    margin-bottom: -35px;
-    font-size: 47px;
-    color: #e6e359;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.marg img {
+    margin-top: 30vh;
+    width: 40vw;
+    height: 70vh;
 }
 
-.tittleLand h2 {
-    margin-bottom: -18px;
+.tittleLand {
+    position: absolute;
+    top: 0;
+    left: -7vw;
+}
+
+.tittleLand img {
+    width: 60vw;
+    height: 50vh;
+    margin-bottom: -20vh;
+    margin-top: 1vh;
+}
+
+/* .tittleLand h2 {
+    margin-bottom: -6vh;
     font-size: 40px;
     color: #e6e359;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 30vh;
+    left: 25vw;
+} */
 
 /* Estilo del subtítulo */
-.tittleLand h4 {
+/* .tittleLand h4 {
     font-size: 23px;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     color: rgb(164, 229, 249);
     font-family: 'Courier New', Courier, monospace;
-}
+    position: absolute;
+    top: 30vh;
+    left: 18vw;
+} */
 
 /* Estilo del contenedor del formulario */
 .divForm {
-    /* border: 2px solid gray; */
+    position: absolute;
+    top: 43vh;
+    left: 12vw;
     border-radius: 10px;
     max-width: 480px;
     margin: 0 auto;
     padding-top: 20px;
-    margin-top: 15px;
 }
 
 /* Estilo de la etiqueta de entrada y el campo de entrada */
@@ -57,16 +69,17 @@ label {
     display: block;
     font-size: 19px;
     margin-bottom: 5px;
-    color: rgb(165, 253, 105);
+    color: rgb(0, 0, 0);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 input[type="text"],
 input[type="password"] {
-    padding: 10px;
-    font-size: 16px;
+    padding: 7px;
+    font-size: 12px;
     border-radius: 4px;
     margin-bottom: 15px;
+    width: 8.8vw;
     /* background-color: #ade3af; */
 }
 
@@ -79,7 +92,7 @@ input[type="password"] {
 
 /* Estilo del botón */
 .btnform {
-    background-color: #55cd59;
+    background-color: #31d8eecc;
     border: none;
     color: white;
     padding: 12px 30px;
@@ -87,16 +100,18 @@ input[type="password"] {
     text-decoration: none;
     display: inline-block;
     font-size: 19px;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 5vh;
 }
 
 /* Estilo del botón del usuario invitado */
 .btnGuest {
     /* height: 35px; */
-    background-color: rgb(235, 90, 213);
+    background-color: rgba(235, 90, 213, 0.806);
     border: none;
     color: white;
     padding: 12px 30px;
@@ -104,47 +119,53 @@ input[type="password"] {
     text-decoration: none;
     display: inline-block;
     font-size: 19px;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 20px;
     border-radius: 4px;
     cursor: pointer;
 }
 
 /* Estilo del mensaje de error */
 .danger {
-    max-width: 460px;
+    /* max-width: 460px; */
     height: auto;
     padding: .5em;
     font-size: 1em;
     border-radius: .4em;
     font-weight: 600;
     background-color: rgb(254, 254, 57);
+    /* margin-left: 4vw; */
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width:770px) {
     .wrapper {
         margin-top: -20vh;
     }
 
-    .imagland img {
-        width: 48vw;
-        height: 60vh;
-        margin-left: -4vw;
-        margin-top: 5vh;
-    }
-
     .marg {
-        margin-top: 3vh;
+        /* width: 100%; */
+        margin-top: -17vh;
+        position: relative;
+        left: -2vw;
     }
 
-    .tittleLand h1 {
-        margin-bottom: -15px;
-        font-size: 28px;
+    .marg img {
+        margin-top: 30vh;
+        width: 53vw;
+        height: 65vh;
     }
 
-    .tittleLand h2 {
-        margin-bottom: -18px;
-        font-size: 27px;
+    .tittleLand {
+        position: absolute;
+        top: 0;
+        left: -5.5vw;
+    }
+
+    .tittleLand img {
+        width: 70vw;
+        height: 50vh;
+        margin-bottom: -20vh;
+        margin-top: 1vh;
     }
 
     /* Estilo del subtítulo */
@@ -152,91 +173,121 @@ input[type="password"] {
         font-size: 17px;
     }
 
+    .divForm {
+        position: absolute;
+        top: 42vh;
+        left: 17vw;
+
+    }
+
     label {
         font-size: 18px;
+        font-weight: 600;
     }
 
     input[type="text"],
     input[type="password"] {
         padding: 5px;
-        font-size: 14px;
-        border-radius: 4px;
+        font-size: 12px;
+        border-radius: 5px;
         margin-bottom: 15px;
+        width: 15vw;
         /* background-color: #ade3af; */
     }
 
     .btnform {
         font-size: 16px;
+        padding: 12px;
     }
 
     .btnGuest {
         font-size: 16px;
+        padding: 12px;
     }
 
     .danger {
-        max-width: 250px;
+        /* max-width: 350px; */
         padding: .3em;
         font-size: .8em;
-        margin-left: 6.5%;
+        /* margin-left: 6em; */
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 570px) {
     .wrapper {
-        margin-top: -20vh;
-    }
-
-    .imagland img {
-        width: 45vw;
-        height: 40vh;
-        margin-left: -4vw;
-        margin-top: 5vh;
+        margin-top: -16vh;
     }
 
     .marg {
-        margin-top: 3vh;
+        /* width: 100%; */
+        margin-top: -3vh;
+        position: relative;
+        left: -2vw;
     }
 
-    .tittleLand h1 {
-        margin-bottom: -15px;
-        font-size: 20px;
+    .marg img {
+        margin-top: 26vh;
+        width: 95vw;
+        height: 110%;
     }
 
-    .tittleLand h2 {
-        margin-bottom: -18px;
-        font-size: 19px;
+    .tittleLand {
+        position: absolute;
+        top: 0;
+        left: 4vw;
+    }
+
+    .tittleLand img {
+        width: 90vw;
+        height: 25vh;
+        margin-bottom: -20vh;
+        margin-top: 10vh;
     }
 
     /* Estilo del subtítulo */
     .tittleLand h4 {
-        font-size: 12px;
+        font-size: 17px;
+    }
+
+    .divForm {
+        position: absolute;
+        top: 35vh;
+        left: 27vw;
+
     }
 
     label {
-        font-size: 14px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: -.5vh;
     }
 
     input[type="text"],
     input[type="password"] {
         padding: 5px;
         font-size: 12px;
-        border-radius: 4px;
+        border-radius: 5px;
         margin-bottom: 15px;
+        width: 30vw;
         /* background-color: #ade3af; */
     }
 
     .btnform {
-        font-size: 14px;
+        margin-top: 1vh;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 1vh;
     }
 
     .btnGuest {
-        font-size: 14px;
+        font-size: 16px;
+        padding: 10px;
     }
 
     .danger {
-        max-width: 200px;
+        /* max-width: 280px; */
         padding: .3em;
         font-size: .8em;
-        margin-left: 4%;
+        margin-left: 6vw;
     }
 }

@@ -36,7 +36,7 @@
     margin: .5em;
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 768px) {
     /* .h1Fav {
         margin-top: 7vh;
     } */
@@ -51,9 +51,10 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
     .h1Fav {
-        margin-top: 7vh;
+        margin-top: 10vh;
+        line-height: 100%;
     }
 
     .divFav {

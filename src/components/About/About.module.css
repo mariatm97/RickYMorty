@@ -80,14 +80,14 @@
   background-color: blueviolet;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .divAb {
-    margin-top: 3vh;
+    margin-top: 6vh;
   }
 
   .imgAb {
-    width: 50vw;
-    height: 40vh;
+    width: 90%;
+    height: 45%;
   }
 
   .abouText {
@@ -96,11 +96,11 @@
 
   .aboutinf {
     /* flex-direction: column; */
-    width: 20vw;
+    width: 7vw;
     height: auto;
-    margin-left: 10%;
+    /* margin-left: 10vw; */
     justify-content: space-around;
-    margin-left: 24.7%;
+    margin-left: 20vw;
   }
 
   .aboutcontext {

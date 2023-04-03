@@ -44,17 +44,16 @@ export const Form = (props) => {
 
   return (
     <div className={style.wrapper}>
-      <div className={style.imagland} style={{ float: 'left' }}>
-        <img src={require('../imagenes/rick_and_morty_portals.png')} alt="rick and morty" />
-      </div>
-      <div className={style.marg} style={{ float: 'right' }}>
+      <div className={style.marg} /*style={{ float: 'right' }}*/>
         <div className={style.tittleLand}>
-          <h1>Welcome to the world</h1>
-          <h2>of Rick and Morty!</h2>
-          <h4>Log in to access all features</h4>
+          {/* <h1>Welcome to the world of</h1> */}
+          <img src={require('../imagenes/rick_and_morty_logo.png')} alt="rick and morty" />
+          {/* <h2>Welcome!</h2>
+          <h4>Log in to access all features</h4> */}
         </div>
-        <div className={style.divForm}>
+        <img src={require('../imagenes/rick-and-morty-fond.png')} alt="rick and morty" />
 
+        <div className={style.divForm}>
           <form onSubmit={handleSubmit}>
 
             <div>

@@ -34,7 +34,7 @@ a:hover {
   width: auto;
   font-size: 15px;
   border-radius: .4em;
-  box-shadow: 0 3px 3px 0 #38ba526c, 0 17px 50px 0 rgba(53, 89, 57, 0.19);
+  /* box-shadow: 0 3px 3px 0 #38ba526c, 0 17px 50px 0 rgba(53, 89, 57, 0.19); */
   margin-bottom: .9em;
   margin-left: 1em;
   padding: .5em;
