@@ -1,30 +1,45 @@
-.marg {
-    /* margin-left: 40vw; */
-    margin-top: -25vw;
+.wrapper {
+    /* display: flex; */
+    /* width: 100%; */
+    margin-top: -56vh;
+}
+
+/* .imagland .marg {
+    margin-top: -50vh;
+} */
+
+.imagland img {
+    width: 50vw;
+    height: 105vh;
 }
 
 /* Estilo del encabezado principal */
+.marg {
+    margin-top: 16vh;
+}
 
 .tittleLand h1 {
     margin-bottom: -35px;
     font-size: 47px;
-    color: #40d145;
+    color: #e6e359;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .tittleLand h2 {
     margin-bottom: -18px;
     font-size: 40px;
-    color: #40d145;
+    color: #e6e359;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Estilo del subtítulo */
 .tittleLand h4 {
     font-size: 23px;
     margin-bottom: 2px;
-    color: rgb(116, 217, 247);
-    font-family: cursive;
+    color: rgb(164, 229, 249);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Estilo del contenedor del formulario */
@@ -42,8 +57,8 @@ label {
     display: block;
     font-size: 19px;
     margin-bottom: 5px;
-    color: rgb(17, 17, 17);
-    font-family: cursive;
+    color: rgb(165, 253, 105);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 input[type="text"],
@@ -72,7 +87,7 @@ input[type="password"] {
     text-decoration: none;
     display: inline-block;
     font-size: 19px;
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 10px;
     border-radius: 4px;
     cursor: pointer;
@@ -89,7 +104,7 @@ input[type="password"] {
     text-decoration: none;
     display: inline-block;
     font-size: 19px;
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -104,4 +119,124 @@ input[type="password"] {
     border-radius: .4em;
     font-weight: 600;
     background-color: rgb(254, 254, 57);
+}
+
+@media only screen and (max-width: 1023px) {
+    .wrapper {
+        margin-top: -20vh;
+    }
+
+    .imagland img {
+        width: 48vw;
+        height: 60vh;
+        margin-left: -4vw;
+        margin-top: 5vh;
+    }
+
+    .marg {
+        margin-top: 3vh;
+    }
+
+    .tittleLand h1 {
+        margin-bottom: -15px;
+        font-size: 28px;
+    }
+
+    .tittleLand h2 {
+        margin-bottom: -18px;
+        font-size: 27px;
+    }
+
+    /* Estilo del subtítulo */
+    .tittleLand h4 {
+        font-size: 17px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        /* background-color: #ade3af; */
+    }
+
+    .btnform {
+        font-size: 16px;
+    }
+
+    .btnGuest {
+        font-size: 16px;
+    }
+
+    .danger {
+        max-width: 250px;
+        padding: .3em;
+        font-size: .8em;
+        margin-left: 6.5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .wrapper {
+        margin-top: -20vh;
+    }
+
+    .imagland img {
+        width: 45vw;
+        height: 40vh;
+        margin-left: -4vw;
+        margin-top: 5vh;
+    }
+
+    .marg {
+        margin-top: 3vh;
+    }
+
+    .tittleLand h1 {
+        margin-bottom: -15px;
+        font-size: 20px;
+    }
+
+    .tittleLand h2 {
+        margin-bottom: -18px;
+        font-size: 19px;
+    }
+
+    /* Estilo del subtítulo */
+    .tittleLand h4 {
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 5px;
+        font-size: 12px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        /* background-color: #ade3af; */
+    }
+
+    .btnform {
+        font-size: 14px;
+    }
+
+    .btnGuest {
+        font-size: 14px;
+    }
+
+    .danger {
+        max-width: 200px;
+        padding: .3em;
+        font-size: .8em;
+        margin-left: 4%;
+    }
 }

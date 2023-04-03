@@ -37,3 +37,18 @@
   background-color: #4fa4fe;
   color: rgb(7, 7, 7);
 }
+
+@media only screen and (max-width: 480px) {
+  .inp {
+    font-size: 13px;
+    height: 6vh;
+    line-height: 100%;
+    margin-bottom: 1vh;
+  }
+
+  .boton {
+    font-size: 13px;
+    height: 6vh;
+    line-height: 100%;
+  }
+}

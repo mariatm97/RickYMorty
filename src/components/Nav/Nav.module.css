@@ -10,7 +10,7 @@
   padding-top: 0.6em;
   padding-right: 20px;
   z-index: 1;
-  background-color: rgb(7, 18, 58);
+  background-color: rgb(0, 0, 0);
   /* margin-top: 10rem; */
 }
 
@@ -44,4 +44,13 @@ a:hover {
 
 .btnNav:hover {
   background-color: #4fa4fe;
+}
+
+@media only screen and (max-width: 480px) {
+  .btnNav {
+    font-size: 13px;
+    height: 8vh;
+    line-height: 100%;
+    margin-bottom: 8vh;
+  }
 }

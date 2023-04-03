@@ -43,8 +43,11 @@ export const Form = (props) => {
   }
 
   return (
-    <div className={style.immg}>
-      <div className={style.marg}>
+    <div className={style.wrapper}>
+      <div className={style.imagland} style={{ float: 'left' }}>
+        <img src={require('../imagenes/rick_and_morty_portals.png')} alt="rick and morty" />
+      </div>
+      <div className={style.marg} style={{ float: 'right' }}>
         <div className={style.tittleLand}>
           <h1>Welcome to the world</h1>
           <h2>of Rick and Morty!</h2>

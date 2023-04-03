@@ -24,7 +24,7 @@
 
 .imgDet {
   width: 30vw;
-  height: 30vw;
+  height: 65vh;
   border-radius: 50%;
   /* border: 2px solid white; */
 }
@@ -69,7 +69,7 @@
   background-color: rgb(160, 160, 230);
   color: rgb(51, 5, 67);
   /* height: 4vw; */
-  width: 15vw;
+  width: auto;
   font-weight: bold;
   font-size: 18px;
   border-radius: 5px;
@@ -83,4 +83,25 @@
 
 .btn:hover {
   background-color: blueviolet;
+}
+
+@media only screen and (max-width: 480px) {
+  .divDet {
+    margin-top: 3vh;
+  }
+
+  .imgDet {
+    width: 40vw;
+    height: 28vh;
+    border-radius: 50%;
+    /* border: 2px solid white; */
+  }
+
+  .hinf {
+    font-size: 19px;
+  }
+
+  .ps {
+    font-size: 16px;
+  }
 }

@@ -79,3 +79,42 @@
 .btn:hover {
   background-color: blueviolet;
 }
+
+@media only screen and (max-width: 480px) {
+  .divAb {
+    margin-top: 3vh;
+  }
+
+  .imgAb {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .abouText {
+    width: 75vw;
+  }
+
+  .aboutinf {
+    /* flex-direction: column; */
+    width: 20vw;
+    height: auto;
+    margin-left: 10%;
+    justify-content: space-around;
+    margin-left: 24.7%;
+  }
+
+  .aboutcontext {
+    padding: 10px;
+  }
+
+  .h3Ab {
+    font-size: 18px;
+    margin-bottom: 2vh;
+  }
+
+  .pAb {
+    font-size: 15px;
+    margin-bottom: -5vh;
+  }
+
+}
